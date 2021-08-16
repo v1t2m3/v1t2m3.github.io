@@ -1,0 +1,256 @@
+@media screen and (max-width: 420px) {
+      .top-nav {
+            position: relative;
+            display: flex;
+            flex-direction: row;
+            justify-content: left;
+      }
+      .banner-green-life {
+            position: absolute;
+            left: 62px;
+            top: 2px;
+            z-index: 9;
+      }
+      .banner-green-life img {
+            height: 52px;
+            width: auto;
+      }
+      .left-top-nav {
+            width: 40px;
+      }
+      .name-company {
+            display: none;
+      }
+      .logo-company {
+            height: 52px;
+            width: 60px;
+            margin-left: 5px;
+      }
+      .logo-company img {
+            height: 52px;
+            width: 60px;
+      }
+      .right-top-nav {
+            width: 180px;
+            display: flex;
+            align-items: center;
+            margin-right: 25px;
+      }
+      .search {
+            display: none;
+      }
+      .bottom-nav {
+            display: flex;
+            flex-direction: column;
+            height: 5px;
+            background-image: linear-gradient(
+                  to bottom right,
+                  rgb(176, 255, 86),
+                  rgb(86, 190, 60),
+                  rgb(12, 150, 69)
+            );
+      }
+
+      /* ---------------------------- */
+
+      .container {
+            margin-top: 52px;
+            display: flex;
+            width: 100%;
+            height: max-content;
+            min-height: calc(100vh - 92px);
+      }
+      .center-container {
+            padding: 20px 5px 20px 5px;
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+            width: 98%;
+            height: max-content;
+            min-height: calc(100vh - 82px);
+            row-gap: 20px;
+      }
+      .card-chart {
+            width: 100%;
+            min-width: 300px;
+      }
+      .title-chart {
+            height: 20px;
+            width: 100%;
+            border-radius: 5px 5px 0px 0px;
+      }
+      /* ---------------------------- */
+
+      footer {
+            height: 40px;
+            width: 100%;
+            position: relative;
+            bottom: 0px;
+            background-color: white;
+      }
+      .hr-footer {
+            border-top: 1px solid rgb(12, 150, 69);
+      }
+      .row-footer {
+            margin-top: 5px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-wrap: wrap;
+            width: 100%;
+            font-size: 10px;
+      }
+      .left-footer {
+            display: flex;
+            margin-right: 5px;
+            color: rgb(31, 114, 10);
+      }
+      .center-footer {
+            display: flex;
+            align-items: center;
+      }
+      .email,
+      .phone {
+            margin: 0px 5px;
+            display: flex;
+            align-items: center;
+            color: rgb(31, 114, 10);
+      }
+      .email svg {
+            height: 15px;
+            width: 15px;
+            margin-right: 5px;
+      }
+      .phone svg {
+            height: 15px;
+            width: 15px;
+            margin-right: 5px;
+      }
+      .right-footer li {
+            display: inline-flex;
+            align-content: center;
+            margin: 5px 5px;
+      }
+      .icon-social {
+            height: 25px;
+            width: 15px;
+            margin: 0px 5px;
+      }
+      .icon-social svg {
+            height: 15;
+            width: 15px;
+      }
+}
+/* ---------------------------- */
+/* ---------------------------- */
+/* ---------------------------- */
+
+@media screen and (max-width: 768px) {
+      .top-nav {
+            position: relative;
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+      }
+      .banner-green-life {
+            position: absolute;
+            left: 330px;
+            top: -5px;
+            z-index: 9;
+      }
+      .banner-green-life img {
+            height: 85px;
+            width: auto;
+      }
+      .left-top-nav {
+            width: 350px;
+            justify-content: space-around;
+      }
+      .name-company {
+            font-size: 14px;
+            font-weight: 500;
+      }
+      .logo-company {
+            height: 76px;
+            width: 81px;
+            margin-left: 0px;
+      }
+      .logo-company img {
+            height: 76px;
+            width: 81px;
+      }
+      .right-top-nav {
+            width: 180px;
+            display: flex;
+            align-items: center;
+            margin-right: 25px;
+      }
+      .search {
+            display: none;
+      }
+      /* ---------------- */
+      .card-chart {
+            width: 100%;
+            min-width: 550px;
+      }
+      /* ---------------- */
+      footer {
+            height: 40px;
+            width: 100%;
+            position: relative;
+            bottom: 0px;
+            background-color: white;
+      }
+      .hr-footer {
+            border-top: 1px solid rgb(12, 150, 69);
+      }
+      .row-footer {
+            margin-top: 5px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-wrap: wrap;
+            width: 100%;
+            font-size: small;
+      }
+      .left-footer {
+            display: flex;
+            margin-right: 5px;
+            color: rgb(31, 114, 10);
+      }
+      .center-footer {
+            display: flex;
+            align-items: center;
+      }
+      .email,
+      .phone {
+            margin: 0px 5px;
+            display: flex;
+            align-items: center;
+            color: rgb(31, 114, 10);
+      }
+      .email svg {
+            height: 20px;
+            width: 20px;
+            margin-right: 5px;
+      }
+      .phone svg {
+            height: 20px;
+            width: 20px;
+            margin-right: 5px;
+      }
+      .right-footer li {
+            display: inline-flex;
+            align-items: center;
+            margin: 5px 5px;
+      }
+      .icon-social {
+            height: 20px;
+            width: 20px;
+            margin: 0px 5px;
+      }
+      .icon-social svg {
+            height: 20;
+            width: 20px;
+      }
+}

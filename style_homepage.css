@@ -1,0 +1,308 @@
+* {
+      margin: 0px;
+      padding: 0px;
+      box-sizing: border-box;
+}
+/* ------------------------ */
+nav {
+      width: 100vw;
+      height: max-content;
+      display: flex;
+      flex-direction: row;
+}
+.left-nav {
+      width: 35%;
+      height: 100%;
+      padding: 10px 20px;
+      display: flex;
+      flex-direction: row;
+      column-gap: 10%;
+      align-items: center;
+      color: rgb(1, 100, 1);
+}
+.icon-company {
+      height: max-content;
+      width: max-content;
+}
+.icon-company img {
+      height: 100px;
+      width: 100px;
+}
+.name-company {
+      font-family: "Roboto", sans-serif;
+      display: flex;
+      flex-direction: column;
+      align-content: center;
+      text-align: center;
+}
+.name1 {
+      font-size: 25px;
+      font-weight: 500;
+}
+.name2 {
+      font-size: 15px;
+      font-weight: 400;
+}
+.right-nav {
+      position: relative;
+      padding-right: 20px;
+      height: initial;
+      width: 65%;
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      justify-content: flex-end;
+      font-family: "Roboto", sans-serif;
+      font-size: 18px;
+      font-weight: 400;
+}
+.menu-list {
+      display: flex;
+      flex-direction: row;
+      top: 50px;
+      right: 30px;
+      color: rgb(1, 100, 1);
+}
+.menu-list li:hover {
+      background-image: linear-gradient(
+            to right bottom,
+            rgb(108, 177, 138),
+            rgb(79, 223, 98)
+      );
+      color: white;
+      font-style: bold;
+      cursor: pointer;
+}
+.menu-list li {
+      display: flex;
+      height: 30px;
+      width: 110px;
+      list-style: none;
+      align-items: center;
+      justify-content: center;
+      text-decoration: none;
+}
+a {
+      text-decoration: none;
+      color: white;
+      display: flex;
+      align-items: center;
+      justify-content: flex-start;
+}
+a ion-icon {
+      margin: 5px 5px 5px 0px;
+      height: 20px;
+      width: 20px;
+}
+.list-li {
+      position: relative;
+}
+.list {
+      position: absolute;
+      top: 30px;
+      left: 0px;
+      width: 110px;
+      padding: 5px;
+      display: flex;
+      flex-direction: column;
+      visibility: hidden;
+      background-image: linear-gradient(
+            to right bottom,
+            rgb(108, 177, 138),
+            rgb(79, 223, 98)
+      );
+
+      box-shadow: 3px 3px 5px gray;
+      font-size: 15px;
+      font-weight: 400;
+      z-index: 999;
+}
+.list-li:hover .list {
+      visibility: visible;
+}
+.list a:hover {
+      color: rgb(1, 100, 1);
+}
+.container {
+      position: relative;
+      display: flex;
+      flex-direction: row;
+      height: calc(100vh - 124px);
+      max-height: max-content;
+      width: 100vw;
+      background-image: url(./image/wallpaperflare.com_wallpaper.jpg);
+      background-position: top left;
+      background-repeat: no-repeat;
+      background-size: 100% 100%;
+}
+.left-container {
+      height: 100%;
+      width: 35%;
+      background-color: rgba(87, 214, 87, 0.85);
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+}
+.name-shop {
+      font-family: "Bebas Neue", cursive;
+      font-size: 120px;
+      color: white;
+}
+.slogan {
+      font-family: "Roboto", sans-serif;
+      font-size: 21px;
+      color: rgb(235, 255, 232);
+}
+.right-container {
+      height: 100%;
+      width: 65%;
+}
+.right-container p {
+      height: 100%;
+      width: 100%;
+      padding: 40px 20px 0px 20px;
+      background-color: rgba(242, 255, 242, 0.8);
+      font-family: "Roboto", sans-serif;
+      font-size: 30px;
+      color: rgb(1, 100, 1);
+}
+/* ------------------------------------------------------- */
+/* ------------------------------------------------------- */
+/* ------------------------------------------------------- */
+
+@media screen and (min-width: 1025px) {
+      .btn-menu {
+            display: none;
+      }
+}
+@media screen and (max-width: 1024px) {
+      .btn-menu {
+            display: flex;
+            position: relative;
+      }
+      .container {
+            height: calc(100vh - 124px);
+      }
+      .icon-menu {
+            display: flex;
+            color: rgb(1, 100, 1);
+            width: 30px;
+            height: 30px;
+            align-items: center;
+            justify-content: center;
+      }
+      .menu-toggle {
+            position: absolute;
+            top: 0px;
+            left: 0px;
+            display: flex;
+            width: 30px;
+            height: 30px;
+            border-radius: 5px;
+            outline: none;
+            border-width: 0px;
+            border-color: rgb(1, 100, 1);
+            box-shadow: 3px 3px 5px rgb(1, 100, 1);
+            background: none;
+      }
+      .menu-list {
+            position: fixed;
+            right: 0px;
+            top: 100px;
+            z-index: 10;
+            background-color: rgba(87, 214, 87, 0.918);
+            display: block;
+            border-radius: 5px;
+            box-shadow: 3px 3px 5px gray;
+            width: max-content;
+            transition: transform 0.25s linear;
+            /* visibility: hidden; */
+            transform: translateX(120%);
+      }
+      .menu-list.is-active {
+            transform: translateX(-2%);
+            /* visibility: visible; */
+      }
+      .menu-list li {
+            align-items: left;
+            justify-content: left;
+            width: 100%;
+            padding: 10px 15px;
+      }
+      .list {
+            top: 0px;
+            border-radius: 5px;
+            transform: translateX(-100%);
+      }
+      .name-shop {
+            font-size: 75px;
+      }
+      .slogan {
+            font-size: 13px;
+      }
+}
+@media screen and (max-width: 770px) {
+      .icon-company {
+            height: 80px;
+            width: 80px;
+      }
+      .icon-company img {
+            height: 100%;
+            width: 100%;
+      }
+      .name1 {
+            font-size: 20px;
+            font-weight: 500;
+      }
+      .name2 {
+            font-size: 14px;
+            font-weight: 400;
+      }
+      .container {
+            height: calc(100vh - 100px);
+      }
+      .name-shop {
+            font-size: 60px;
+      }
+      .slogan {
+            font-size: 10px;
+      }
+}
+@media screen and (max-width: 415px) {
+      .icon-company {
+            display: none;
+      }
+      .name1 {
+            font-size: 20px;
+            font-weight: 500;
+      }
+      .name2 {
+            font-size: 12px;
+            font-weight: 300;
+      }
+      .container {
+            height: calc(100vh - 82px);
+      }
+      .name-shop {
+            font-size: 50px;
+      }
+      .slogan {
+            font-size: 10px;
+      }
+      .container {
+            flex-direction: column;
+      }
+      .left-container {
+            width: 100%;
+            height: max-content;
+            padding: 10px 0px;
+      }
+      .right-container {
+            width: 100%;
+            height: calc(100vh - 181px);
+      }
+      .right-container p {
+            font-size: 18px;
+      }
+}
